@@ -8,17 +8,23 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 // 导入组件
 import jishuqi from "./components/jishuqi.vue"
+import echarts from "./components/echarts.vue"
+
 new Vue({
 // 挂载实例
    router:new VueRouter({
     routes:[
-      // {
-      //   path:'./',
-      //   component:jishuqi
-      // },
       {
-        path:'./jishuqi',
+        path:'/',
         component:jishuqi
+      },
+      {
+        path:'/jishuqi',
+        component:jishuqi
+      },
+      {
+        path:'/echarts',
+        component:echarts
       },
     ]
   }),
