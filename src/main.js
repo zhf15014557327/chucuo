@@ -15,10 +15,10 @@ new Vue({
 // 挂载实例
    router:new VueRouter({
     routes:[
-      {
-        path:'/',
-        component:jishuqi
-      },
+      // {
+      //   path:'/',
+      //   component:jishuqi
+      // },
       {
         path:'/jishuqi',
         component:jishuqi
