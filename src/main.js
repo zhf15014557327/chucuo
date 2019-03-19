@@ -9,6 +9,7 @@ Vue.use(VueRouter)
 // 导入组件
 import jishuqi from "./components/jishuqi.vue"
 import echarts from "./components/echarts.vue"
+import lunbotu from "./components/lunbotu.vue"
 
 new Vue({
 // 挂载实例
@@ -25,6 +26,10 @@ new Vue({
       {
         path:'/echarts',
         component:echarts
+      },
+      {
+        path:'/lunbotu',
+        component:lunbotu
       },
     ]
   }),
