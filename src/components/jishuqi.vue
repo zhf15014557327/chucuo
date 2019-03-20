@@ -22,7 +22,7 @@ export default {
   // 方法
   methods:{
       jia(){
-        // this.num++
+       
           this.num +=this.dfbushu
           if(this.num>this.dfumax){
               this.num=this.dfumax
@@ -30,12 +30,12 @@ export default {
         
       },
       jian(){
-        // this.num--
+       
             this.num-=this.dfbushu
             if(this.num<this.dfumin){
                 this.num=this.dfumin
             };
-          this.$emit("num-change",this.num)
+          
       }
   },
 }
