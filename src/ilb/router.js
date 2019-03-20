@@ -10,10 +10,11 @@ import lunbotu from "../components/lunbotu.vue"
 // 创建路由实例
 let router= new VueRouter({
     // 写路由规则
-    routes:[
+    routes:[ 
+        // { path: '/a', redirect: '/b' }路由重定向
         {
             path:'/',
-            component:jishuqi
+            redirect:"jishuqi"
         },
         {
             path:'/jishuqi',
