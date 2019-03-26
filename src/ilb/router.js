@@ -7,6 +7,7 @@ Vue.use(VueRouter)
 import jishuqi from "../components/jishuqi.vue"
 import echarts from "../components/echarts.vue"
 import lunbotu from "../components/lunbotu.vue"
+import todos from "../components/todos.vue"
 // 创建路由实例
 let router= new VueRouter({
     // 写路由规则
@@ -27,6 +28,10 @@ let router= new VueRouter({
         {
             path:'/lunbotu',
             component:lunbotu
+        },
+        {
+            path:'/todos',
+            component:todos
         },
     ]
 });

@@ -2,7 +2,7 @@
   <div class="echarts-container">
       <h1>echarts的基本使用</h1>
     <!-- echarts容器 -->
-    <div id="main" style="width: 600px;height:400px;" ref="echarts"></div>
+    <div id="main" style="width: 800px;height:400px;" ref="echarts"></div>
   </div>
 </template>
 <script>
@@ -156,6 +156,7 @@ export default {
 
 <style lang="scss" >
 .echarts-container{
+   
     h1{
     text-align: center;
     }

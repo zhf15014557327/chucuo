@@ -38,6 +38,10 @@ export default {
           href:"/lunbotu",
           info:'轮播图',
         },
+        {
+          href:"/todos",
+          info:'记事本',
+        },
       ]
     }
   },
