@@ -60,7 +60,10 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-  .nav-box{
+#app{
+  width: 100vw;
+ .nav-box{
+   margin-bottom: 100px;
     width: 100%;
     height: 80px;
     display: flex;
@@ -86,10 +89,17 @@ export default {
          background-color: pink;
        }
        a{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: 100%;
          color: black;
          text-decoration: none;
        }
     }
     }
   }
+}
+ 
 </style>

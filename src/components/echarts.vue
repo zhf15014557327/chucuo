@@ -156,12 +156,12 @@ export default {
 
 <style lang="scss" >
 .echarts-container{
-   
+    //  width: 100vw;
     h1{
     text-align: center;
     }
     #main{
-    margin: 200px auto;
+    margin: 0px auto;
     }
 }
 </style>
