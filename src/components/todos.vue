@@ -54,6 +54,7 @@
         </span>
         <ul class="filters">
           <li>
+					
             <a :class="{selected:isStr=='All'}" @click="isStr='All'">All</a>
           </li>
           <li>
@@ -112,7 +113,19 @@ export default {
         alert("哥们写点东西吧!");
         // 终止代码返回
         return;
-      }
+			};
+			
+		// 数组去重相同的事
+	this.msgList.forEach(v=>{
+		if(	v.info.indexOf(this.msg)!=-1){
+				console.log( 	this.msgList.indexOf(v));
+					this.msgList.splice(this.msgList.indexOf(v),1)
+		}
+	})
+
+			// if(this.msgList.info.indexOf(this.msg)!=-1){
+			// 		this.msgList.splice(this.msgList.indexOf(this.msg),1)
+			// }
       // 添加到数组unshift()
       // this.msgList.push({
       this.msgList.unshift({
@@ -132,7 +145,7 @@ export default {
     // 如果 `msgList` 发生改变，这个函数就会运行
     msgList: {
       handler(xin, jiu) {
-        // 保存数据到缓存中
+				// 保存数据到缓存中
         localStorage.setItem("jian", JSON.stringify(this.msgList));
       },
       // 深度监听
